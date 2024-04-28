@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dog.css">
+    <title>Cado Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body>
+    <section class="header">
+        <a href="Cado_Shop.html" class="logo">
+            <img src="Image/logo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="Cado_Shop.html">Trang chủ</a>
+            
+            <div class="dropdown">
+                <a href="#">Sản phẩm</a>
+                <div class="dropdown-content">
+                    <a href="dog.html">Chó cưng</a>
+                    <a href="meo.html">Mèo cưng</a>
+                </div>
+            </div>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+            
+            <div class="icons">
+                <div class="bx bx-search-alt" id="search-btn"></div>
+                 <div class="icon-cart">  
+                    <div class="bx bx-cart" id="cart-btn"> <span>0</span></div>
+                    </div>
+                    <a href="LIEN HE.html" class="bx bx-user" id="user-btn"></a>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm ở đây...">
+                <label for="search-box" class="bx bx-search-alt"></label>
+            </div>
+            
+            <div class="giohang">
+                <div class="danhsach">
+                    <div class="item">
+                        
+                        <div class="quantity">
+                            <span class="minus" data-id="1"> - </span>
+                            <span> 1 </span>
+                            <span class="plus" data-id="1"> + </span>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="totals">
+                    <p>Tổng số lượng: <span id="totalQuantity">0</span></p>
+                    <p>Tổng tiền: <span id="totalPrice">0.000</span></p>
+                </div>
+                <div class="btnn">
+                    <button class="checkout">Thanh toán</button>
+                </a>
+                </div>
+
+            </div>
+    </section>
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #ffffff, #0581e0)">
+                        <div class="content">
+                            <h2>ROYAL, A NEW PRODUCT</h2>
+                            <p class="price">1.333.333Đ</p>
+                            <p class="description">
+                                Dành cho chó kích cỡ Mini (cân nặng tối đa 10kg) và đang trong lứa tuổi Puppy từ 2 đến 10 tháng tuổi.Công thức của ROYAL CANIN Mini Puppy được thiết kế để đáp ứng các nhu cầu cụ thể của giống chó nhỏ trong suốt giai đoạn cuộc đời từ 2 đến 10 tháng tuổi.
+                            </p>
+                         
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/hat_cho/07.png" alt=""height="390px">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #ffb649, #653a01)">
+                        <div class="content">
+                            <h2> MOSHM, A NEW PRODUCT</h2>
+                            <p class="price">295.000Đ</p>
+                            <p class="description">
+                                Thức ăn cho chó Poodle của hãng MOSHM (Max Power) với các thành phần từ tự nhiên là lựa chọn hoàn hảo cho thú cưng của bạn. Cung cấp dinh dưỡng thiết yếu phù hợp cho giống chó Poodle. Thành phần hoàn toàn không có phẩm màu công nghiệp, không chất tạo mùi, phụ gia thực phẩm. Do đó không ảnh hưởng đến màu lông và sức khỏe của thú cưng rất an toàn cho thú cưng của bạn. 
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/hat_cho/09.png" alt="" width="210px" height="410px">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #f29625, #dfdfdf)">
+                        <div class="content">
+                            <h2>BALANCE, A NEW PRODUCT</h2>
+                            <p class="price">290.00Đ</p>
+                            <p class="description">
+                                Làm đẹp da lông: Sản phẩm Soft Balance có chứa cá hồi tươi, DL-ethionine, vitamin E, kẽm giúp tái tạo tế bào, chăm sóc da khỏe, lông bóng mượt.
+                                Dễ hấp thu - Tốt cho đường ruột:giúp chó dễ tiêu hóa, ngăn ngừa các bệnh về đường ruột, hấp thu chất dinh dưỡng tốt nhất.
+                            </p>
+                        
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/hat_cho/08.png" alt=""width="250px" height="450px">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #2c8e2f, #dfdfdf)">
+                        <div class="content">
+                            <h2>ADULT, A NEW PRODUCT</h2>
+                            <p class="price">399.999Đ</p>
+                            <p class="description">
+                                Thức ăn cho chó EUKANUBA Daily Care Adult Dry Dog Food Sensitive Skin giúp chó nhạy cảm. Một số con chó dễ bị da nhạy cảm và do đó có thể được hưởng lợi từ dinh dưỡng đặc biệt, như Eukanuba Sensitive Skin để giúp giữ cho con chó của bạn trông và cảm thấy tuyệt vời.
+                            </p>
+                          
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/m1-removebg-preview.png" alt="" width="70px" height="380px">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </section>
+    </main>
+
+<!-----title--->
+    <h1 class="heading" >Sản Phẩm<span> Cho Chó</span></h1>
+
+    <div id="accordion">
+        <div class="cap">Thương hiệu nổi tiếng</div>
+        <div class="ct" > 
+            <label><input type="checkbox" class="thuonghieu" value="Grandmagic">Grandmagic</label>
+            <label><input type="checkbox" class="thuonghieu" value="Nutri">Nutri</label>
+            <label><input type="checkbox" class="thuonghieu" value="ANF">ANF</label>
+      
+        </div>
+        <div class="cap">Giá bán</div>
+        <div class="ct"> 
+            <label><input type="checkbox" class="giaban" value="1">Dưới 100.000</label>
+            <label><input type="checkbox" class="giaban" value="2">Từ 100 đến 200.000</label>
+            <label><input type="checkbox" class="giaban" value="3">Từ 200 đến 300.000</label>
+            <label><input type="checkbox" class="giaban" value="4">Trên 300.000</label>
+        </div>
+        <div class="cap">Loại sản phẩm</div>
+        <div class="ct"> 
+            <label><input type="checkbox" class="manhinh" value="hat">Hạt</label>
+            <label><input type="checkbox" class="manhinh" value="pate">Pate</label>
+            <label><input type="checkbox" class="manhinh" value="Dochoi">Đồ chơi</label>
+        </div>
+        </div>  
+       
+<!---------------product-->
+<hr>
+<section class="sanpham">
+<div class="sanpham1">
+
+    <div class="card" data-brand="Grandmagic" data-price="80000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="Image/spnb/spnb_1.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt Grandmagic cho chó 1kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">80.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="ANF" data-price="105000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="Image/spnb/spnb2.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt ANF Cat 6 Free Indoor Adult 6kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">105.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="ANF" data-price="375000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="Image/spnb/spnb3.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt ANF Nature's Kitchen cho chó 2kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">375.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="ANF" data-price="460000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="Image/spnb/spnb4.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt ANF 6 Free Dog cá hồi 2k</h1>
+        <div class="card-body">
+
+            <p class="card-price">460.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="19000" data-type="pate">
+    <div class="card-content">
+        <div class="img">
+        <img src="Image/spnb/spnb5.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Pate Snappy Tom Premium cho mèo lon 85g</h1>
+        <div class="card-body">
+
+            <p class="card-price">19.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" data-brand="Nutri" data-price="428000" data-type="hat">
+   
+        <div class="card-content">
+            <div class="img">
+                <a href="chitietsanphamcho.html" class="card-link">
+                <img src="./Image/hat_cho/hat8.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title" style="color: black;">Hạt Nutri Source Gà và Đậu</h1>
+            <div class="card-body">
+                <p class="card-price">428.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<div class="card" data-brand="Nutri" data-price="578000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/hat_cho/hat6.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt Nutrience SubZero cho chó 2,27kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">578.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="Ganador" data-price="385000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/hat_cho/hat3.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Ganador Adult Salmon and Rice 3kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">385.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="135000" data-type="hat">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/hat_cho/hat2.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Hạt Pedigree chó con vị gà, trứng và sữa 1,3kg</h1>
+        <div class="card-body">
+
+            <p class="card-price">135.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="20000" data-type="pate">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/pate22.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Pate cho chó smartheart</h1>
+        <div class="card-body">
+
+            <p class="card-price">20.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="29000" data-type="pate">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/pate3.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Pate cho chó lớn Pedigree</h1>
+        <div class="card-body">
+
+            <p class="card-price">29.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="29000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/chuông-removebg-preview.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Chuông dạy chó mèo</h1>
+        <div class="card-body">
+
+            <p class="card-price">29.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" data-brand="" data-price="29000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/2679011782_820581130-removebg-preview.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Bóng dây kéo</h1>
+        <div class="card-body">
+
+            <p class="card-price">30.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card" data-brand="" data-price="20000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/5736017403_1734590950-768x768-removebg-preview.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Đĩa ném</h1>
+        <div class="card-body">
+
+            <p class="card-price">20.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="10000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/2676804811_1847764777-removebg-preview.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Bóng đồ chơi</h1>
+        <div class="card-body">
+
+            <p class="card-price">10.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="90000" data-type="pate">
+    <div class="card-content">
+        <div class="img">
+        <img src="./Image/royal.png" alt="" class="card-img">
+    </div>
+        <h1 class="card-title">Pate Royal Canin Recovery Cao Cấp</h1>
+        <div class="card-body">
+
+            <p class="card-price">90.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</section>
+<!---bộ lọc-->
+
+<!---------footer-->
+<footer class="section-p1">
+    <div class="col">
+        
+        <h4>Liên hệ</h4>
+        <p><strong>Địa chỉ:</strong> Số 12 Nguyễn Văn Bảo, P4, Gò Vấp, TPHCM </p>
+        <p><strong>Điện thoại:</strong> 0123456789</p>
+        <p><strong>Email:</strong> cadoshop@gmail.com</p>
+    </div>
+
+    <div class="col">
+        <h4>Cado Shop</h4>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Thông tin vận chuyển</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Chính sách bảo hành</a>
+    </div>
+
+    <div class="col">
+        <h4>Theo dõi Shop</h4>
+        <div class="icon">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram-alt'></i>
+        <i class='bx bxl-tiktok'></i>
+        </div>
+        <img class="logo" src="Image/logo.png" alt="">
+    </div>
+    <div class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379826526!2d106.68427047371154!3d10.822158889329408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1713772617879!5m2!1svi!2s" width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+    <script src="dog.js"></script>
+    <script src="Cado_Shop.js"></script>
+</body>
+</html>

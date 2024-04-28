@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SPmeo.css">
+    <title>Cado Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body>
+    <section class="header">
+        <a href="Cado_Shop.html" class="logo">
+            <img src="Image/logo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="Cado_Shop.html">Trang chủ</a>
+            
+            <div class="dropdown">
+                <a href="#">Sản phẩm</a>
+                <div class="dropdown-content">
+                    <a href="dog.html">Chó cưng</a>
+                    <a href="meo.html">Mèo cưng</a>
+                </div>
+            </div>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+            
+            <div class="icons">
+                <div class="bx bx-search-alt" id="search-btn"></div>
+                 <div class="icon-cart">  
+                    <div class="bx bx-cart" id="cart-btn"> <span>0</span></div>
+                    </div>
+                    <a href="LIEN HE.html" class="bx bx-user" id="user-btn"></a>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm ở đây...">
+                <label for="search-box" class="bx bx-search-alt"></label>
+            </div>
+            
+            <div class="giohang">
+                <div class="danhsach">
+                    <div class="item">
+                        
+                        <div class="quantity">
+                            <span class="minus" data-id="1"> - </span>
+                            <span> 1 </span>
+                            <span class="plus" data-id="1"> + </span>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="totals">
+                    <p>Tổng số lượng: <span id="totalQuantity">0</span></p>
+                    <p>Tổng tiền: <span id="totalPrice">0.000</span></p>
+                </div>
+                <div class="btnn">
+                    <button class="checkout">Thanh toán</button>
+                </a>
+                </div>
+
+            </div>
+    </section>
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #f4f478, #a2e411)">
+                        <div class="content">
+                            <h2>NEKKO, A NEW PRODUCT</h2>
+                            <p class="price">122.000Đ</p>
+                            <p class="description">
+                                Pate cho mèo con Nekko Kitten 70g được làm từ 100% thực thịt và cá thật, chất lượng cao và đã được lựa chọn là tốt. Những chú mèo rất thích hương vị của cá, thịt và phô mai trong các loại pate Nekko.
+                                Pate cho mèo con Nekko Kitten 70g dành cho mèo từ 1-12 tháng tuổi
+                                Pate mèo con Nekko Kitten 70g được sản xuất bởi công ty Unicord Public Co Nhật Bản với công nghệ tiên tiến và nguồn nguyên liệu tươi ngon chất lượng  có nhà máy đặt tại Thái Lan.
+                            </p>
+                          
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/chomeo/pt1.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #ffffff, #f79f46);">
+                        <div class="content">
+                            <h2>ROYAL, A NEW PRODUCT</h2>
+                            <p class="price">299.999Đ</p>
+                            <p class="description">
+                                Thức ăn ROYAL CANIN Kitten giúp hỗ trợ phát triển hệ miễn dịch tự nhiên của mèo con nhờ vào hệ dưỡng chất chống oxy hóa bao gồm cả vitamin E (công thức đã được cấp bằng sáng chế). ROYAL CANIN® Kitten phù hợp cho mèo con dưới 12 tháng tuổi, giúp hỗ trợ tăng sức khỏe hệ tiêu hóa nhờ L.I.P - một loại chất đạm được chọn lọc với khả năng tiêu hóa tới 90%.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/chomeo/pt7.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #eb78bd, #ffffff);">
+                        <div class="content">
+                            <h2>WANPY,A NEW PRODUCT</h2>
+                            <p class="price">29.999Đ</p>
+                            <p class="description">
+                                Wanpy là thức ăn vật nuôi hoàn chỉnh cho mèo trưởng thành.
+
+                                Công thức đã được phát triển với sự kết hợp chuyên biệt của vitamin A-D3-E để đáp ứng nhu cầu dinh dưỡng của mèo.
+                                
+                                Công thức dinh dưỡng cân bằng được xây dựng với các thành phần chất lượng như thịt bò, nguồn protein và khoáng chất, được lựa chọn theo khả năng tự nhiên để đáp ứng nhu cầu hàng ngày của động vật. Không có thuốc nhuộm và chất bảo quản nhân tạo được thêm vào.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/chomeo/pt3.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background:linear-gradient(45deg, #1e8ac0, #ffd7af)">
+                        <div class="content">
+                            <h2>MINIMO, A NEW PRODUCT</h2>
+                            <p class="price">89.000Đ</p>
+                            <p class="description">
+                                Thành phần Lúa mì, bắp, bột thịt gia cầm, bã nành, mỡ gia cầm, bột cá ngừ (cá thật chứa protein và nguồn Omega 3 tự nhiên), Taurine, khoáng chất, Calci, chiết xuất Yucca.. Công dụng - Thức ăn Minino giúp phát triển cấu trúc xương, cơ bắp và tăng cường sức khỏe toàn diện của mèo: Taurine tốt cho mắt.
+                            </p>
+                         
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./Image/chomeo/h3.png" alt="" >
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </section>
+    </main>
+
+<!-----------------banner-->
+
+<h1 class="heading" >Sản Phẩm<span> Cho Mèo</span></h1>
+
+<!---------------product-->
+
+<div id="accordion">
+    <div class="cap">Thương hiệu nổi tiếng</div>
+    <div class="ct" > 
+        <label><input type="checkbox" class="thuonghieu" value="ANF">ANF</label>
+        <label><input type="checkbox" class="thuonghieu" value="Natural Core">Natural Core</label>
+        <label><input type="checkbox" class="thuonghieu" value="Royal Canin">Royal Canin</label>
+        <label><input type="checkbox" class="thuonghieu" value="Nekko">Nekko</label>
+    </div>
+    <div class="cap">Giá bán</div>
+    <div class="ct"> 
+        <label><input type="checkbox" class="giaban" value="1">Dưới 100.000</label>
+        <label><input type="checkbox" class="giaban" value="2">Từ 100 đến 200.000</label>
+        <label><input type="checkbox" class="giaban" value="3">Từ 200 đến 300.000</label>
+        <label><input type="checkbox" class="giaban" value="4">Trên 300.000</label>
+    </div>
+    <div class="cap">Loại sản phẩm</div>
+    <div class="ct"> 
+        <label><input type="checkbox" class="manhinh" value="hat">Hạt</label>
+        <label><input type="checkbox" class="manhinh" value="pate">Pate</label>
+        <label><input type="checkbox" class="manhinh" value="Dochoi">Đồ chơi</label>
+    </div>
+    </div>  
+    <hr>
+    <section class="sanpham">
+        <div class="sanpham1">
+        <div class="card" data-brand="Cattyman" data-price="25000" data-type="Pate">
+            <div class="card-content">
+                <div class="img">
+                    <img src="./Image/chomeo/av1.png" alt="" class="card-img">
+                </div>
+                <h1 class="card-title">Súp thưởng mix vị Cattyman 60g</h1>
+                <div class="card-body">
+                    <p class="card-price">25.000</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success">Mua ngay</button>
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-brand="Minimax" data-price="105000" data-type="hat">
+            <div class="card-content">
+                <div class="img">
+                    <img src="./Image/chomeo/h1.png" alt="" class="card-img">
+                </div>
+                <h1 class="card-title">Hạt Minimax cho mèo 350g</h1>
+                <div class="card-body">
+                    <p class="card-price">105.000</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success">Mua ngay</button>
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-brand="ANF" data-price="375000" data-type="hat">
+            <div class="card-content">
+                <div class="img">
+                    <a href="chitietsanphamcat.html">
+                        <img src="./Image/chomeo/h5.png" alt="" class="card-img">
+                    </a>
+                </div>
+                <h1 class="card-title">Hạt ANF Cat 6 Free Indoor Adult 6kg</h1>
+                <div class="card-body">
+                    <p class="card-price">375.000</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-success">Mua ngay</button>
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        
+   
+
+    <div class="card" data-brand="CIAO" data-price="75000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/av6.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">CIAO Churu 50 pcs Collagen and Fiber</h1>
+            <div class="card-body">
+                <p class="card-price">75.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" data-brand="Morando" data-price="195000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/h8.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Hạt Morando M4 vị cá biển 2kg</h1>
+            <div class="card-body">
+                <p class="card-price">195.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" data-brand="Gimcat" data-price="75000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/av8.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Snack phô mai viên Gimcat Cheezies 50g</h1>
+            <div class="card-body">
+                <p class="card-price">75.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" data-brand="Nutri Source" data-price="208000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/pt3.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Hạt Nutri Source Gà và Đậu</h1>
+            <div class="card-body">
+                <p class="card-price">208.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" data-brand="Natural Core" data-price="238000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/h6.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Hạt Natural Core EcoC1 đa đạm cho mèo 5kg</h1>
+            <div class="card-body">
+                <p class="card-price">238.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" data-brand="Morando" data-price="289000" data-type="hat">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/pt7.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Hạt Morando M47 cho mèo trưởng thành</h1>
+            <div class="card-body">
+                <p class="card-price">289.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" data-brand="Nekko Gold" data-price="35000" data-type="pate">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/pt5.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Pate lon Nekko Gold cho mèo 85g</h1>
+            <div class="card-body">
+                <p class="card-price">35.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card" data-brand="Maria" data-price="66000" data-type="pate">
+        <div class="card-content">
+            <div class="img">
+                <img src="./Image/chomeo/pt4.png" alt="" class="card-img">
+            </div>
+            <h1 class="card-title">Pate Maria cho mèo gói 70g</h1>
+            <div class="card-body">
+                <p class="card-price">66.000</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success">Mua ngay</button>
+                <button class="btn btn-border">Giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="card" data-brand="Simba" data-price="15000" data-type="pate">
+    <div class="card-content">
+        <div class="img">
+            <img src="./Image/chomeo/pt8.png" alt="" class="card-img">
+        </div>
+        <h1 class="card-title">Pate Simba cho mèo 100g</h1>
+        <div class="card-body">
+            <p class="card-price">15.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="75000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+            <img src="./Image/caoong.png" alt="" class="card-img">
+        </div>
+        <h1 class="card-title">Đồ Chơi Ống Cào Móng Có Bóng Cho Mèo</h1>
+        <div class="card-body">
+            <p class="card-price">75.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="450000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+            <img src="./Image/trucao.png" alt="" class="card-img">
+        </div>
+        <h1 class="card-title">Trụ cào móng cho mèo cao cấp</h1>
+        <div class="card-body">
+            <p class="card-price">450.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="10000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+            <img src="./Image/dochoi.png" alt="" class="card-img">
+        </div>
+        <h1 class="card-title">Đồ Chơi bóng lông vũ</h1>
+        <div class="card-body">
+            <p class="card-price">10.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+
+<div class="card" data-brand="" data-price="2100000" data-type="Dochoi">
+    <div class="card-content">
+        <div class="img">
+            <img src="./Image/thapmeo.png" alt="" class="card-img">
+        </div>
+        <h1 class="card-title">Tháp mèo màu cam</h1>
+        <div class="card-body">
+            <p class="card-price">2.100.000</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Mua ngay</button>
+            <button class="btn btn-border">Giỏ hàng</button>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+        
+          <footer class="section-p1">
+            <div class="col">
+                
+                <h4>Liên hệ</h4>
+                <p><strong>Địa chỉ:</strong> Số 12 Nguyễn Văn Bảo, P4, Gò Vấp, TPHCM </p>
+                <p><strong>Điện thoại:</strong> 0123456789</p>
+                <p><strong>Email:</strong> cadoshop@gmail.com</p>
+            </div>
+
+            <div class="col">
+                <h4>Cado Shop</h4>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Thông tin vận chuyển</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Chính sách bảo hành</a>
+            </div>
+
+            <div class="col">
+                <h4>Theo dõi Shop</h4>
+                <div class="icon">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-tiktok'></i>
+                </div>
+                <img class="logo" src="Image/logo.png" alt="">
+            </div>
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379826526!2d106.68427047371154!3d10.822158889329408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1713772617879!5m2!1svi!2s" width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </footer>
+    <script src="SPmeo.js"></script>
+    <script src="Cado_Shop.js"></script>
+
+
+
+</body>
+
+
+</html>
