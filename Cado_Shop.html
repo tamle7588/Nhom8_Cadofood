@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cado Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Cado_Shop.css">
+    <link rel="stylesheet" href="chatbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+      <!-- Google Fonts Link For Icons -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    
+        <section class="header">
+            <a href="Cado_Shop.html" class="logo">
+                <img src="Image/logo.png" alt="">
+            </a>
+            <nav class="navbar">
+                <a href="Cado_Shop.html">Trang chủ</a>
+                
+                <div class="dropdown">
+                    <a href="#">Sản phẩm</a>
+                    <div class="dropdown-content">
+                        <a href="dog.html">Chó cưng</a>
+                        <a href="meo.html">Mèo cưng</a>
+                    </div>
+                </div>
+                <a href="tintuc.html">Tin tức</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+                
+                <div class="icons">
+                    <div class="bx bx-search-alt" id="search-btn"></div>
+                     <div class="icon-cart">  
+                        <div class="bx bx-cart" id="cart-btn"> <span>0</span></div>
+                        </div>
+                        <a href="LIEN HE.html" class="bx bx-user" id="user-btn"></a>
+                </div>
+
+                <div class="search-form">
+                    <input type="search" id="search-box" placeholder="Tìm kiếm ở đây...">
+                    <label for="search-box" class="bx bx-search-alt"></label>
+                </div>
+                
+                <div class="giohang">
+                    <div class="danhsach">
+                        <div class="item">
+                            
+                            <div class="quantity">
+                                <span class="minus" data-id="1"> - </span>
+                                <span> 1 </span>
+                                <span class="plus" data-id="1"> + </span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="totals">
+                        <p>Tổng số lượng: <span id="totalQuantity">0</span></p>
+                        <p>Tổng tiền: <span id="totalPrice">0.000</span></p>
+                    </div>
+                    <div class="btnn">
+                        <button class="checkout">Thanh toán</button>
+                    </a>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="banner1">
+            <div class="slideshow-container" >
+                <div class="slide fade" >
+                    <img src="./Image/spnb/dogbanner.png" style="width:100%;height: 500px;">
+                </div>
+            
+                <div class="slide fade">
+                    <img src="./Image/spnb/slide.png" style="width:100%;height:500px;">
+                </div>
+            
+                <div class="slide fade">
+                    <img src="Image/banner1.png" style="width:100%; height: 500px;">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+                <span><h5>SẢN PHẨM</h5></span>
+                <span><h4>DÀNH CHO CHÓ</h4></span>
+              <a href="dog.html"> <button class="btn-muangay">Mua ngay</button></a> 
+        </div>
+        <div class="banner-box banner-box2 ">
+                    <span><h5>SẢN PHẨM</h5></span>
+                    <span><h4>DÀNH CHO MÈO</h4></span>
+                   <a href="meo.html"> <button class="btn-muangay">Mua ngay</button></a>
+         </div>
+            </div>
+    </section>
+
+    <section class="sanpham">
+        <h2>Sản phẩm mới</h2>
+        <hr>
+        <div class="sanpham1">
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/spnb/spnb_1.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Hạt Grandmagic cho chó 1kg</h1>
+                <div class="card-body">
+
+                    <p class="card-price">80.000</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/spnb/spnb2.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Hạt ANF Cat 6 Free Indoor Adult 6kg</h1>
+                <div class="card-body">
+                   
+                    <p class="card-price">105.000</p>
+                </div>
+                <div class="card-footer">
+                  
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/spnb/spnb3.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Hạt ANF Nature's Kitchen cho chó 2kg</h1>
+                <div class="card-body">
+                 
+                    <p class="card-price">375.000</p>
+                </div>
+                <div class="card-footer">
+                    
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/spnb/spnb4.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Hạt ANF 6 Free Dog cá hồi 2kg</h1>
+                <div class="card-body">
+                    <p class="card-price">460.000</p>
+                </div>
+                <div class="card-footer">
+             
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/spnb/spnb5.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Pate Snappy Tom Premium cho mèo lon 85g</h1>
+                <div class="card-body">
+                    <p class="card-price">19.000</p>
+                </div>
+                <div class="card-footer">
+                 
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    </section>
+
+    <section class="sanpham">
+        <h2>Sản phẩm cho chó</h2>
+        <hr>
+        <div class="sanpham1">
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/chotc/chochott1.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Xương sữa Milky Bone Goodies</h1>
+                <div class="card-body">
+
+                    <p class="card-price">120.000</p>
+                </div>
+                <div class="card-footer">
+                
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/chotc/chochott2.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Xương Orgo sạch răng vị bò</h1>
+                <div class="card-body">
+                   
+                    <p class="card-price">35.000</p>
+                </div>
+                <div class="card-footer">
+             
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/chotc/chochott3.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Ganador Adult Salmon and Rice</h1>
+                <div class="card-body">
+                 
+                    <p class="card-price">185.000</p>
+                </div>
+                <div class="card-footer">
+                  
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/chotc/chochott4.png" alt="" class="card-img">
+                </div>
+                <h1 class="card-title">Hạt Nutri Source PureVita Cá hồi và Đậu Hà Lan</h1>
+                <div class="card-body">
+                    <p class="card-price">400.000</p>
+                </div>
+                <div class="card-footer">
+             
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/chotc/chochott5.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Smartheart Power Pack Puppy
+                </h1>
+                <div class="card-body">
+                    <p class="card-price">275.000</p>
+                </div>
+                <div class="card-footer">
+                
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+
+    <section class="sanpham">
+        <h2>Sản phẩm cho mèo</h2>
+        <hr>
+        <div class="sanpham1">
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/meotc/meott1.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Thịt cá hồi hun khói cho mèo Bowwow 70g</h1>
+                <div class="card-body">
+
+                    <p class="card-price">65.000</p>
+                </div>
+                <div class="card-footer">
+            
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/meotc/meott2.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Nutrience Infusion Adult Indoor 2.27kg</h1>
+                <div class="card-body">
+                   
+                    <p class="card-price">422.000</p>
+                </div>
+                <div class="card-footer">
+                 
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/meotc/meott3.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Hạt Natural Core EcoC1 đa đạm cho mèo 5kg</h1>
+                <div class="card-body">
+                 
+                    <p class="card-price">780.000</p>
+                </div>
+                <div class="card-footer">
+        
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/meotc/meott4.png" alt="" class="card-img">
+                </div>
+                <h1 class="card-title">Pate sữa dê Kit Cat cá ngừ lon 70g</h1>
+                <div class="card-body">
+                    <p class="card-price">28.000</p>
+                </div>
+                <div class="card-footer">
+                
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="img">
+                <img src="Image/meotc/meott5.png" alt="" class="card-img">
+            </div>
+                <h1 class="card-title">Sữa KMR cho mèo con 340g
+                </h1>
+                <div class="card-body">
+                    <p class="card-price">620.000</p>
+                </div>
+                <div class="card-footer">
+            
+                    <button class="btn btn-border">Giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+<section class="tintuc">
+    <h2>Tin tức mới nhất</h2>
+        <hr>
+    <div class="tintuc-1">
+        <div class="news">
+            <div class="bia">
+            <img src="Image/tintuc/tintuc1.png" alt=""></div>
+            <a href="tintuc.html">BẬT MÍ 05 LOẠI BÁNH THƯỞNG CHO CÚN NGAY TRONG BẾP CỦA BẠN</a>
+            <br>
+            
+            <p class="news-noidung">SALE SẬP SÀN 🔥 - SEN ĐỪNG BỎ LỠ 🥳️🤩CÁC SẢN PHẨM TRỊ VE RẬN CHO CHÓ MÈO. 🐈🐕👉 Mùa ...</p>
+        </div>
+        <div class="news">
+            <div class="bia">
+            <img src="Image/tintuc/tintuc2.png" alt=""></div>
+            <a href="https://www.petshome.vn/blogs/news/that-su-su-dung-banh-thuong-cho-cho-meo-co-lam-chung-nghe-loi">THẬT SỰ SỬ DỤNG BÁNH THƯỞNG CHO CHÓ MÈO CÓ LÀM CHÚNG NGHE LỜI?</a>
+            <br>
+            
+            <p class="news-noidung">Bên cạnh các bữa ăn chính, bánh thưởng cho chó mèo là món ăn quen thuộc với các “Boss” cưng. ...</p>
+        </div>
+        <div class="news">
+            <div class="bia">
+            <img src="Image/tintuc/tintuc3.png" alt=""></div>
+            <a href="https://www.petshome.vn/blogs/news/bat-mi-05-loai-banh-thuong-cho-cun-ngay-trong-bep-cua-ban">BÁNH THƯỞNG CHÓ DẠNG KHÔ HAY ƯỚT TỐT HƠN?</a>
+            <br>
+            
+            <p class="news-noidung">Nếu bạn không thể chối từ trà sữa, thì chú chó của bạn cũng không dễ dàng gì bỏ qua các loại bánh thưởng chó ...</p>
+        </div>
+        <div class="news">
+            <div class="bia">
+            <img src="Image/tintuc/tintuc4.png" alt=""></div>
+            <a href="https://www.petshome.vn/blogs/news/bat-mi-05-loai-banh-thuong-cho-cun-ngay-trong-bep-cua-ban">
+                TUYỆT CHIÊU CHỌN THỨC ĂN CHO HUSKY MÙA RỤNG LÔNG</a>
+            <br>
+           
+            <p class="news-noidung">“Mùa lông bay” chắc là nỗi ám ảnh lớn nhất của các Sen đang chăm “Đại ngáo” Husky. Nhưng bạn có bao giờ tìm hiểu lý do vì sao các Boss ...</p>
+        </div>
+    </div>
+</section>
+
+        <section id="newsletter">
+            <div class="newtext">
+                <h4>Đăng kí để nhận thông tin ưu đãi</h4>
+                <p>Nhận thông tin về những <span> ưu đãi mới nhất  </span> của chúng tôi qua Email</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Nhập Email của bạn">
+                <button class="normal">Đăng kí</button>
+            </div>
+          </section>
+
+        
+          <footer class="section-p1">
+            <div class="col">
+                
+                <h4>Liên hệ</h4>
+                <p><strong>Địa chỉ:</strong> Số 12 Nguyễn Văn Bảo, P4, Gò Vấp, TPHCM </p>
+                <p><strong>Điện thoại:</strong> 0123456789</p>
+                <p><strong>Email:</strong> cadoshop@gmail.com</p>
+            </div>
+
+            <div class="col">
+                <h4>Cado Shop</h4>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Thông tin vận chuyển</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Chính sách bảo hành</a>
+            </div>
+
+            <div class="col">
+                <h4>Theo dõi Shop</h4>
+                <div class="icon">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-tiktok'></i>
+                </div>
+                <img class="logo" src="Image/logo.png" alt="">
+            </div>
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379826526!2d106.68427047371154!3d10.822158889329408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1713772617879!5m2!1svi!2s" width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </footer>
+          <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Xin chào👋<br>Tôi có thể giúp gì cho bạn?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+          </div>
+<script src="Cado_Shop.js"></script>
+<script src="chatbox.js"></script>
+
+<script src="dog.js"></script>
+</body>
+</html>
